@@ -1,6 +1,16 @@
-# Sixfold backend test-task
+# Sixfold backend test-task 🌍
 
-## Task description
+## About
+
+I solved the task by using Dijkstras algorithm to find the shortest path. I also tried solving it by implementing bidirectional algorith, which would be faster, but couldn't iron out the bugs. 
+
+## NOTE
+
+1. Not sure why some tests are not passing, distance seems to be within the range.
+2. When in manually checked, distance from TLL -> CPH -> SFO should be 9646 km-s, but the test says between `8990, 9030`
+
+<details>
+<summary>Task description</summary>
 
 The test task consists of two parts, the main part and a bonus part. We suggest tackling the bonus part once the main objective of the service has been achieved.
 
@@ -31,3 +41,5 @@ The service also includes a set of tests, which can be executed via `yarn test`,
 The service is also setup to run in docker, you can use the docker-compose file to run either the service itself (exposes the same port 3000 as with `yarn start`/`yarn start:dev`) - `docker-compose up -d service`.
 
 You can also run the tests via `docker-compose up test`.
+
+<details>

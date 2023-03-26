@@ -22,7 +22,8 @@ function haversine(lat1, lon1, lat2, lon2) {
     lon2 = radians(lon2);
     const lat = lat2 - lat1;
     const lon = lon2 - lon1;
-    const d = Math.pow(Math.sin(lat * 0.5), 2) + Math.cos(lat1) * Math.cos(lat2) * Math.pow(Math.sin(lon * 0.5), 2);
+    const d = Math.pow(Math.sin(lat * 0.5), 2) +
+        Math.cos(lat1) * Math.cos(lat2) * Math.pow(Math.sin(lon * 0.5), 2);
     const earthRadiusKm = 6371.0088;
     return 2.0 * earthRadiusKm * Math.asin(Math.sqrt(d));
 }
